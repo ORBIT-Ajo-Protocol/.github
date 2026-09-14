@@ -49,8 +49,13 @@ the group itself votes to slash a defaulter's stake.
 
 **Current status:** contracts and backend are deployed and tested
 end-to-end against Stellar testnet. The frontend is a complete UI/UX
-simulation that has not yet been wired to either — see each repo's README
-for exact status and testnet contract addresses.
+simulation that has not yet been wired to either, though its Dashboard
+surfaces the real testnet contract addresses as verifiable links rather
+than hiding them behind a simulated layer — see each repo's README for
+exact status. For the fullest write-up — all three repos explained
+together plus a step-by-step, [LIVE]/[SIMULATED]-tagged walkthrough of the
+whole protocol — see
+[orbit-frontend/ARCHITECTURE.md](https://github.com/ORBIT-Ajo-Protocol/orbit-frontend/blob/main/ARCHITECTURE.md).
 
 ## Protocol flow (on-chain)
 
@@ -85,3 +90,7 @@ Each repo is independently runnable — see its README:
 - [orbit-contracts](https://github.com/ORBIT-Ajo-Protocol/orbit-contracts#build-order) — Rust + `stellar` CLI
 - [orbit-backend](https://github.com/ORBIT-Ajo-Protocol/orbit-backend#running-locally) — Docker Postgres + Node
 - [orbit-frontend](https://github.com/ORBIT-Ajo-Protocol/orbit-frontend#run-locally) — Node, no env vars required
+
+## License
+
+All three repos are MIT licensed.
